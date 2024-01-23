@@ -37,10 +37,8 @@ class TrackScreenState extends State<TrackScreen> {
     audioPlayer.setAudioSource(
       ConcatenatingAudioSource(
         children: [
-          AudioSource.uri(
-            Uri.parse('${song.source}'),
-          ),
-        ],
+          AudioSource.uri(Uri.parse('asset:///${song.source}'),
+          )],
       ),
     );
   }
