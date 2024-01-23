@@ -75,6 +75,7 @@ class TrackScreenState extends State<TrackScreen> {
         children: [
           Image.network(
             song.artwork,
+            //song.artwork,
             fit: BoxFit.cover,
           ),
           const BackgroundFilter(),
