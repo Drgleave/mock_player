@@ -45,8 +45,8 @@ class PlayingTrackCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(35.0),
               child: Image.network(
                 track.artwork,
-                height: 50,
-                width: 50,
+                height: 30,
+                width: 30,
                 fit: BoxFit.cover,
               ),
             ),
@@ -65,7 +65,6 @@ class PlayingTrackCard extends StatelessWidget {
                   ),
                   Text(
                     track.artist_name,
-                    maxLines: 2,
                     style: Theme.of(context)
                         .textTheme
                         .bodySmall!

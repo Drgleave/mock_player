@@ -110,16 +110,15 @@ class MainScreenState extends State<MainScreen> {
                 ],
               ),
             ),
-            const SizedBox(width: 300),
+            const SizedBox(width: 100),
             GestureDetector(
               onTap: () {
-                print('button 2');
               },
               child: Stack(
                 alignment: Alignment.centerRight,
                 //alignment:new Alignment(x, y)
                 children: <Widget>[
-                  const CircularProgressIndicator(),
+                  //const CircularProgressIndicator(),
                   Positioned(
                     child: IconButton(
                       onPressed: () {},
@@ -197,7 +196,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           margin: const EdgeInsets.only(right: 20),
           child: const CircleAvatar(
             backgroundImage: NetworkImage(
-                "https://media.glamourmagazine.co.uk/photos/64ccca835c915d8a7f4f8bb8/16:9/w_2240,c_limit/BILLIE%20EILISH%20040823%20DEFAULT-GettyImages-1201586589.jpg"),
+                "https://images.unsplash.com/photo-1576525865260-9f0e7cfb02b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80"),
           ),
         )
       ],
